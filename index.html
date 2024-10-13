@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+       #a1{
+        height:90px;
+            width: 90px;
+
+            background-color: white;
+            display: flex;
+            margin-left: 33%;
+            margin-top: 20px;
+            border-radius: 50%;
+       }
+       #a2{
+        height:90px;
+            width: 90px;
+
+            background-color: white;
+            display: flex;
+            margin-left: 33%;
+            margin-top: 20px;
+            border-radius: 50%;
+       }
+       #a3{
+        height:90px;
+            width: 90px;
+
+            background-color: white;
+            display: flex;
+            margin-left: 33%;
+            margin-top: 20px;
+            border-radius: 50%;
+       }
+       #button{
+        position: fixed;
+        top: 20%;
+        right: 20%;
+       }
+
+       #btn1{
+        background-color: rgb(114, 213, 241);
+        padding: 10px 30px;
+        border-radius: 10px;
+       }
+       #btn2{
+        background-color: rgb(135, 252, 135);
+        padding: 10px 30px;
+        border-radius: 10px;
+       }
+       #btn3{
+        background-color: rgb(243, 243, 85);
+        padding: 10px 30px;
+        border-radius: 10px;
+       }
+       #box{
+        height:350px;
+        width:300px;
+        border: 10px double rgb(51, 48, 48);
+        position: fixed;
+        top: 10%;
+        left: 20%;
+       }
+    </style>
+<body>
+    <div id="div1">
+        <div id="a1"></div>
+        <div id="a2"></div>
+        <div id="a3"></div>
+    </div>
+    <div id="div2">
+    </div>
+    <div id="button">
+    <button id="btn1" onclick="lightblue()">SUMMER</button>
+    <button id="btn2"onclick="pink()">MONSOON</button>
+    <button id="btn3" onclick="yellow()">WINTER</button>
+   </div>
+   <img src="seasons.jfif"  id="box">
+   </div>
+   <script>
+    function lightblue(){
+        const lightblue1= document.getElementById('a1').style.backgroundColor='lightblue';
+        const lightblue2= document.getElementById('a2').style.backgroundColor='lightblue';
+        const  lightblue3= document.getElementById('a3').style.backgroundColor='lightblue';
+        const  lightblue4= document.getElementById('box').src="summer.jfif";
+    }
+    function pink(){
+        const pink1= document.getElementById('a1').style.backgroundColor='pink';
+        const  pink2= document.getElementById('a2').style.backgroundColor='pink';
+        const  pink3= document.getElementById('a3').style.backgroundColor='pink';
+        const  pink4= document.getElementById('box').src="rainy.jfif";
+    }
+    function yellow()
+    {
+        const yellow1= document.getElementById('a1').style.backgroundColor='yellow';
+        const yellow2=document.getElementById('a2').style.backgroundColor='yellow';
+        const  yellow3= document.getElementById('a3').style.backgroundColor='yellow';
+        const  yellow4= document.getElementById('box').src="winter.jfif"; 
+    }
+    </script>
+   
+</body>
+</html>
